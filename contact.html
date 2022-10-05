@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="css\bootstrap.css">
     <link rel="stylesheet" href="js\bootstrap.js">
-
-    <h1>Home</h1>
+    <h1>Contact</h1>
 </head>
 <body>
     <script src="css\bootstrap.css"></script>
@@ -21,13 +20,28 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
               <a class="nav-link" href="about.html">About</a>
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
             </div>
           </div>
         </div>
       </nav>
-      <img src="images\gnocchi.jpg" class="rounded mx-auto d-block" alt="...">
+      <form action="results.html" method="get">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label" required>Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="radio">
+            <input type="radio" id="pasta" name="fav_food" value="pasa">
+            <label for="pasta">Pasta</label><br>
+            <input type="radio" id="taco" name="fav_food" value="taco">
+            <label for="taco">Tacos</label><br>
+            <input type="radio" id="sushi" name="fav_food" value="sushi">
+            <label for="sushi">Sushi</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
 </body>
 </html>
